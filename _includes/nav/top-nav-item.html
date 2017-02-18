@@ -1,0 +1,5 @@
+<div class="weave-nav-link has-dropdown {% if include.category == include.current_category %}is-current{% endif %}" href="#">
+  {{ include.category | capitalize}}
+  {% assign this_category = site.posts | where: "categories", include.category | sort: "title" %}
+  {% include nav/nav-list.html list=this_category classes="weave-dropdown" child_classes="weave-dropdown__item" %}
+</div>

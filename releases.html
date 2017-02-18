@@ -1,0 +1,14 @@
+---
+layout: page
+---
+
+<ul class="u-list-unstyled">
+  {% for post in site.categories.releases reversed %}
+    <li>
+      <time>{{ post.date | date: "%-d %B, %Y" }}</time>
+      <a href="{{ post.url | prepend:site.baseurl }}">
+        <h2 class="h4">{{ post.title }}</h2>
+      </a>
+    </li>
+  {% endfor %}
+</ul>

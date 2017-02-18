@@ -1,0 +1,40 @@
+$tag__bg--default: $field--default;
+
+$tag__text-color--default: $text--primary;
+
+$tag--max-height:      space(xl);
+$tag__inset--default:  space(xs-in-em) space(md-in-em);
+$tag__inline--default: space(xs-in-em);
+$tag__close-inline:    0 space(md-in-em) 0 0;
+
+$tag--corners:       $rounded--pill;
+$tag__image-corners: $rounded--circle;
+
+.#{$ns}-tag {
+  display: inline-flex;
+  align-items: center;
+  border-radius: $tag--corners;
+  background-color: $tag__bg--default;
+  overflow: hidden;
+  max-height: $tag--max-height;
+  @extend %type--medium, %f-xs !optional;
+
+  &__image {
+    max-height: $tag--max-height;
+    border-radius: $tag__image-corners;
+    // When there's an image, it looks a little nicer to tighten the layout.
+    margin-right: -(space(xs));
+  }
+
+  &__message {
+    padding: $tag__inset--default;
+  }
+
+  &--dismissable {
+    &::after {
+      padding: $tag__close-inline;
+      content: 'X';
+    }
+  }
+
+}

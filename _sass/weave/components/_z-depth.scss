@@ -1,0 +1,12 @@
+// Z-depth refers to the combination of z-index (layer level) and box-shadow that
+// gives the element the visual feeling of being elevated.
+// Controlling it this way makes sure we don't "layer" our elements incorrectly.
+
+%elevated {
+  @each $level in (0, 1, 2, 3, 4, 5) {
+    &--#{$level} {
+      box-shadow: map-deep-get($elevation-map, $level, shadow);
+      z-index:    map-deep-get($elevation-map, $level, index);
+    }
+  }
+}

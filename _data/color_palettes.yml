@@ -1,0 +1,124 @@
+- name: $blue-base
+  type: ui
+  value: "#2F8AB6"
+  role: primary button
+
+- name: $yellow-base
+  type: ui
+  value: "#FFEE7E"
+  role: attention, notification
+
+- name: $yellow-light
+  type: ui
+  value: "#FFFAD6"
+  role: field / BG
+
+- name: $black
+  type: ui
+  value: "#000000"
+  role:
+
+- name: $gray-dark
+  type: ui
+  value: "#303030"
+  role: Primary text
+
+- name: $gray-base
+  type: ui
+  value: "#727272"
+  role: Secondary text, Nav link
+
+- name: $gray-light
+  type: ui
+  value: "#D5D5D5"
+  role: Rules, borders
+
+- name: $gray-lightest
+  type: ui
+  value: "#F7F7F7"
+  role: Nav BG, field BG
+
+- name: $white
+  type: ui
+  value: "#FFFFFF"
+  role:
+
+- name: $mint-dark
+  type: brand
+  value: "#00A19A"
+  role: accent
+
+- name: $mint-base
+  type: brand
+  value: "#00BDB4"
+  role: accent
+
+- name: $mint-lightest
+  type: brand
+  value: "#DDF8F7"
+  role: field / BG
+
+- name: $watermelon-base
+  type: brand
+  value: "#F05D61"
+  role: CTA
+
+- name: $watermelon-light
+  type: brand
+  value: "#F6A2A4"
+  role: accent
+
+- name: $watermelon-lightest
+  type: brand
+  value: "#FFCDD2"
+  role: field / BG
+
+- name: $cyan
+  type: secondary
+  value: "#00BCD4"
+  role:
+
+- name: $pink
+  type: secondary
+  value: "#F23C79"
+  role:
+
+- name: $amber
+  type: secondary
+  value: "#FFB939"
+  role:
+
+- name: $deep-orange
+  type: secondary
+  value: "#FF7137"
+  role:
+
+- name: $lime
+  type: secondary
+  value: "#BFCD00"
+  role:
+
+- name: $deep-purple
+  type: secondary
+  value: "#9575CD"
+  role:
+
+- name: $black-75
+  type: transparency
+  value: rgba(0, 0, 0, 0.75)
+  role: Toast / Snackbar
+
+- name: $black-50
+  type: transparency
+  value: rgba(0, 0, 0, 0.50)
+  role: Modal BG
+
+- name: $black-25
+  type: transparency
+  value: rgba(0, 0, 0, 0.25)
+  role: accent
+
+- name: $black-10
+  type: transparency
+  value: rgba(0, 0, 0, 0.10)
+  role: accent

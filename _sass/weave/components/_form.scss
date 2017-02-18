@@ -1,0 +1,189 @@
+$form-element--stack-between-fields: space(xl);
+$form-element--stack-between-items: space(md);
+
+$form-element--inline-spacing: 0 space(xl) space(md) 0;
+$form-element--inline-gap: space(sm);
+
+$selectable-input-size: 14px;
+
+// Resets inputs as needed. This is *not* included in the global reset so that browser
+// defaults can be used as a fallback.
+%input-reset {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+
+  @extend %f-md !optional;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+%input-control-focus-state {
+  outline: none;
+  position: relative;
+
+  &::after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    border-radius: $rounded--circle;
+    background-color: rgba(0,0,0,0.1);
+    outline: none;
+    position: absolute;
+    z-index: -1;
+    left: -6px;
+    top: -3px;
+  }
+}
+
+%dropdown-indicator {
+  &::after {
+    content: "▾";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+  }
+}
+
+.#{$ns}-form {
+  @extend %type--default !optional;
+
+  &__label,
+  &__help-text {
+    color: $text--secondary;
+    @extend %f-xs !optional;
+  }
+
+  &__help-text {
+    @extend %flex-container !optional;
+
+    &__character-count {
+      // Forces a flex item to push itself to the far right
+      margin-left: auto;
+      color: $text--secondary;
+    }
+  }
+
+  disabled,
+  .is-disabled {
+    opacity: $disabled-opacity;
+    cursor: not-allowed;
+  }
+}
+
+.#{$ns}-form-element {
+  margin-bottom: $form-element--stack-between-fields;
+  @extend %flex-container, %flex-vertical;
+  // Ensures that if this element fills out the space available (when necessary)
+  flex-grow: 1;
+
+  // This removes the duplication of margins when nesting form-element
+  & > & {
+    margin-bottom: 0;
+  }
+
+  &--inline {
+    @extend %flex-container;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  &.has-error {
+    .#{$ns}-form__help-text,
+    .#{$ns}-form__label {
+      color: $error--color;
+    }
+
+    .#{$ns}-text-input {
+      border-bottom: 1px solid $error--color;
+      box-shadow:    0 1px 0 $error--color;
+
+      &:focus {
+        border-bottom: 1px solid $rule--success;
+        box-shadow:    0 1px 0 $rule--success;
+      }
+    }
+  }
+}
+
+.#{$ns}-text-input {
+  @extend %input-reset;
+  border-bottom: 1px solid $rule--default;
+  margin-bottom:  -1px;
+  color: $text--primary;
+  transition: $transition--box-shadow;
+  display: block;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+    border-bottom: 1px solid $rule--success;
+    box-shadow:    0 1px 0 $rule--success;
+  }
+}
+
+// Wrap around a <select> to show the arrow indicator
+.#{$ns}-select_container {
+  position: relative;
+  @extend %dropdown-indicator;
+}
+
+.#{$ns}-selectable-input_container {
+  @extend %flex-container, %flex-center;
+  margin: $form-element--inline-spacing;
+}
+
+.#{$ns}-checkbox,
+.#{$ns}-radio {
+  // Hides unstyled input but still allows it to be focused (important)
+  @extend %u-hidden-from-sight;
+
+  & + .#{$ns}-form__label {
+    // Styles the form__label immediately following the input
+    @extend %f-sm, %flex-container, %flex-center !optional;
+    cursor: pointer;
+    color: $text--primary;
+
+    &::before {
+      // Use ::before to style a custom input element
+      content: '';
+      border: 2px solid $text--secondary;
+      width: $selectable-input-size;
+      height: $selectable-input-size;
+      position: relative;
+      transition: $transition--all;
+      margin-right: $form-element--inline-gap;
+    }
+  }
+
+  &:focus + .#{$ns}-form__label {
+    // When the input is focused, apply a focus state to the label so it can be seen
+    @extend %input-control-focus-state;
+  }
+}
+
+.#{$ns}-checkbox:checked + .#{$ns}-form__label::before {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid $accent--color;
+  border-bottom: 2px solid $accent--color;
+  transform: scaleX(-1) rotate(55deg);
+  backface-visibility: hidden;
+  height: 6px;
+}
+
+.#{$ns}-radio {
+  & + .#{$ns}-form__label::before {
+    border-radius: $rounded--circle;
+  }
+
+  &:checked + .#{$ns}-form__label::before {
+    background-color: color(mint-base);
+    border-color: color(mint-base);
+  }
+}

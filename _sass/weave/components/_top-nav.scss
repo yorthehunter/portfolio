@@ -1,0 +1,64 @@
+$nav--bg:     $field--default;
+$nav--border: 1px solid $border--default;
+
+$nav--link-color:          $text--primary;
+$nav--link-color--hover:   $text--primary;
+$nav--link-color--current: $ui--accent--text-color;
+
+.#{$ns}-top-nav {
+  background:    $nav--bg;
+  border-bottom: $nav--border;
+  @extend %f-md, %flex-container, %flex-content-center !optional;
+
+  &--logo {
+  }
+
+  &--divider {
+    width: 1px;
+    margin-top:    2rem;
+    margin-bottom: 2rem;
+    border-right: $nav--border;
+  }
+
+  &--site-nav {
+    @extend %flex-container !optional;
+  }
+
+  &--secondary-nav {
+    @extend %flex-container !optional;
+    margin-left: auto;
+  }
+}
+
+a.#{$ns}-nav-link,
+.#{$ns}-nav-link {
+  padding: 2rem;
+  position: relative;
+  color: $nav--link-color;
+  @extend %type--default !optional;
+  cursor: pointer;
+  white-space: nowrap;
+
+  &:hover {
+    color: $nav--link-color--hover;
+  }
+
+  &.is-current {
+    @extend %type--medium !optional;
+    color: $nav--link-color--current;
+  }
+
+  &.has-dropdown {
+
+    &::after {
+      content: "▾";
+    }
+
+    &:hover {
+      .#{$ns}-dropdown {
+        opacity: 1.0;
+        pointer-events: auto;
+      }
+    }
+  }
+}

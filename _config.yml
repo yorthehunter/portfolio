@@ -1,0 +1,48 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: "Brian Cleveland: UX, Product, and Design Systems"
+email: boru.design@gmail.com
+description: "Brian Cleveland's portfolio of designs and case studies"
+baseurl: "/portfolio" # the subpath of your site, e.g. /blog
+url: "yorthehunter.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username:
+github_username:  yor_the_hunter
+repository: https://github.com/yorthehunter/portfolio
+
+# Build settings
+# destination: docs
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+# theme:
+# highlighter: rouge
+# gems:
+  # - jekyll-feed
+  # - rouge
+include:
+  - components
+exclude:
+  - .gitignore
+  - readme.md
+  - Gemfile
+  - Gemfile.lock
+
+navigation:
+- category: "Work"
+- category: "About"
+- category: "Contact"

@@ -1,0 +1,44 @@
+.main-header {
+  text-align: center;
+  padding-top: 4em;
+  padding-bottom: 4em;
+
+  &__title {
+    font-weight: $font-weight--bold;
+    // text-transform: uppercase;
+    @extend %type-f1;
+  }
+
+  &__subtitle {
+    font-weight: 100;
+    color: color(cool-gray);
+    @extend %type-f4;
+  }
+}
+
+.image-headshot {
+  max-width: 100%;
+  border-radius: $rounded--circle;
+}
+
+hr {
+  border-style: solid;
+  border-bottom: none;
+  border-color: color(gray-light);
+}
+
+.footer-list {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  color: color(cool-gray);
+
+  &__divider {
+    color: color(gray-light);
+  }
+
+  & > li {
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+  }
+}

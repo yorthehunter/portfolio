@@ -1,0 +1,208 @@
+$type_sizes: f1, f2, f3, f4, f5, f6, md, sm, xs, xxs, xxxs;
+
+@each $size in $type_sizes {
+  $i: index($type_sizes, $size);
+  $next_value:       null;
+  $value_after_next: null;
+
+  // $this_value: nth($type_sizes, $i);
+  @if $size == xxxs {
+    $next_value: xxxs;
+  } @else {
+    $next_value: nth($type_sizes, $i + 1);
+  }
+
+  @if ($size == xxxs or $size == xxs) {
+    $value_after_next: xxxs;
+  } @else {
+    $value_after_next: nth($type_sizes, ($i + 2));
+  }
+
+  .type-#{$size},
+  %type-#{$size} {
+    font-size: type($size);
+    line-height: type($size, lh);
+
+    @include viewport-equal-to-and-smaller-than(md) {
+      font-size: type($next_value);
+      line-height: type($next_value, lh);
+    }
+
+    @include viewport-equal-to-and-smaller-than(xs) {
+      font-size: type($value_after_next);
+      line-height: type($value_after_next, lh);
+    }
+  }
+
+  .type-#{$size}--constant,
+  %type-#{$size}--constant {
+    font-size: type($size);
+    line-height: type($size, lh);
+  }
+
+  .type-#{$size}--body,
+  %type-#{$size}--body {
+    font-size: type($size);
+    line-height: type($size, lh_body);
+
+    @include viewport-equal-to-and-smaller-than(md) {
+      font-size: type($next_value);
+      line-height: type($next_value, lh_body);
+    }
+
+    @include viewport-equal-to-and-smaller-than(xs) {
+      font-size: type($value_after_next);
+      line-height: type($value_after_next, lh_body);
+    }
+  }
+}
+
+%h1,
+.#{$ns}-h1 {
+  @extend %type-f1--body, %u-stack--lg !optional;
+}
+
+%h2,
+.#{$ns}-h2 {
+  @extend %type-f2--body, %u-stack--md !optional;
+}
+
+%h3,
+.#{$ns}-h3 {
+  @extend %type-f3--body, %u-stack--md !optional;
+}
+
+%h4,
+.#{$ns}-h4 {
+  @extend %type-f4--body, %u-stack--md !optional;
+}
+
+%h5,
+.#{$ns}-h5 {
+  @extend %type-f5--body, %u-stack--md !optional;
+}
+
+%h6,
+.#{$ns}-h6 {
+  @extend %type-f6--body, %u-stack--sm !optional;
+}
+
+%p,
+.#{$ns}-p {
+  @extend %type-md--body, %u-stack--md !optional;
+}
+
+%uppercase {
+  text-transform: uppercase;
+}
+
+%type-weight--light {
+  font-weight: $font-weight--light;
+}
+
+%type-weight--default {
+  font-weight: $font-weight--default;
+}
+
+%type-weight--medium {
+  font-weight: $font-weight--medium;
+}
+
+%type-weight--bold {
+  font-weight: $font-weight--bold;
+}
+
+@mixin weave-typography-reset {
+  // Sets us up to have a standardized rem base (in our case, 16px)
+  // We make use of this rem standard to keep most of our elements on an 8px grid (0.5rem)
+  // Generally keeping to that grid (or multiples of it) gives us a cleaner layout overall.
+
+  html {
+    font-size: $base-visual-rhythm;
+  }
+
+  // Typography basic setup
+  body {
+    font-family: $font-face--default, helvetica, sans-serif;
+    color: $text--primary;
+    @extend %type-md;
+
+    // Set a base font size for each of the breakpoints
+    // @include viewport-at(xl) {
+    //   font-size: map-deep-get($breakpoint-map, xl, base-font);
+    // }
+    //
+    // @include viewport-at(lg) {
+    //   font-size: map-deep-get($breakpoint-map, lg, base-font);
+    // }
+    //
+    // @include viewport-at(md) {
+    //   font-size: map-deep-get($breakpoint-map, md, base-font);
+    // }
+    //
+    // @include viewport-at(sm) {
+    //   font-size: map-deep-get($breakpoint-map, sm, base-font);
+    // }
+    //
+    // @include viewport-at(xs) {
+    //   font-size: map-deep-get($breakpoint-map, xs, base-font);
+    // }
+  }
+
+  a:link,
+  a:active,
+  a:visited {
+    color: $link-color;
+    text-decoration: none;
+  }
+
+  ul,
+  ol,
+  dl {
+    @extend %type-md--body, %u-stack--md !optional;
+  }
+
+  dt {
+   @extend %type-weight--medium;
+  }
+
+  dd {
+    margin: 0;
+  }
+
+  h1 {
+    @extend %h1;
+  }
+
+  h2 {
+    @extend %h2;
+  }
+
+  h3 {
+    @extend %h3;
+  }
+
+  h4 {
+    @extend %h4;
+  }
+
+  h5 {
+    @extend %h5;
+  }
+
+  h6 {
+    @extend %h6;
+  }
+
+  p {
+    @extend %p;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@if $weave-typography-reset--option == true {
+  @include weave-typography-reset;
+}

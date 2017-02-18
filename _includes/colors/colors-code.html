@@ -1,0 +1,17 @@
+<div class="weave-grid-row">
+  {% for color in include.color_list %}
+    <figure class="weave-grid-col weave-grid-col--1-6">
+      <div style="background-color: {{ color.value }}; min-height: 8em;">
+      </div>
+      <figcaption>
+        <p>
+          {{ color.name }}
+          <br>
+          {{ color.value }}
+          <br>
+          {{ color.role }}
+        </p>
+      </figcaption>
+    </figure>
+  {% endfor %}
+</div>

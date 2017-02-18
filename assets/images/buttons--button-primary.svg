@@ -1,0 +1,61 @@
+
+<svg width="163px" height="174px" viewBox="414 396 163 174" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 40.3 (33839) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="429" y="407" width="84" height="24" rx="2"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-3" x="429" y="447" width="108" height="32" rx="2"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+        <rect id="path-5" x="429" y="495" width="133" height="56" rx="2"></rect>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.12 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Rectangle-8-Copy-15" stroke="none" fill="none">
+        <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+        <use fill="#2F8AB6" fill-rule="evenodd" xlink:href="#path-1"></use>
+    </g>
+    <path d="M451.932,420.456 C451.932,419.304 451.248,418.656 450.228,418.368 C451.044,418.032 451.536,417.444 451.536,416.568 C451.536,415.224 450.6,414.3 448.62,414.3 L446.448,414.3 L446.448,423 L448.596,423 C450.672,423 451.932,422.196 451.932,420.456 L451.932,420.456 Z M450.36,416.604 C450.36,417.456 449.712,417.948 448.512,417.948 L447.624,417.948 L447.624,415.332 L448.596,415.332 C449.832,415.332 450.36,415.812 450.36,416.604 L450.36,416.604 Z M450.744,420.48 C450.744,421.476 449.988,421.98 448.692,421.98 L447.624,421.98 L447.624,418.932 L448.644,418.932 C450,418.932 450.744,419.484 450.744,420.48 L450.744,420.48 Z M460.596,419.652 L460.596,414.3 L459.396,414.3 L459.396,419.592 C459.396,421.164 458.616,422.064 457.068,422.064 C455.508,422.064 454.788,421.068 454.788,419.556 L454.788,414.3 L453.576,414.3 L453.576,419.712 C453.576,421.836 454.884,423.168 457.068,423.168 C459.252,423.168 460.596,421.848 460.596,419.652 L460.596,419.652 Z M469.176,415.404 L469.008,414.3 L462.132,414.3 L462.132,415.404 L465.012,415.404 L465.012,423 L466.224,423 L466.224,415.404 L469.176,415.404 Z M477.108,415.404 L476.94,414.3 L470.064,414.3 L470.064,415.404 L472.944,415.404 L472.944,423 L474.156,423 L474.156,415.404 L477.108,415.404 Z M486.612,418.644 C486.612,415.956 485.004,414.144 482.46,414.144 C479.928,414.144 478.296,415.968 478.296,418.668 C478.296,421.356 479.904,423.168 482.436,423.168 C484.98,423.168 486.612,421.32 486.612,418.644 L486.612,418.644 Z M485.376,418.656 C485.376,420.732 484.26,422.064 482.448,422.064 C480.66,422.064 479.532,420.732 479.532,418.656 C479.532,416.568 480.648,415.248 482.448,415.248 C484.248,415.248 485.376,416.568 485.376,418.656 L485.376,418.656 Z M495.552,423 L495.552,414.3 L494.448,414.3 L494.448,420.792 L489.612,414.3 L488.544,414.3 L488.544,423 L489.648,423 L489.648,416.268 L494.652,423 L495.552,423 Z" id="BUTTON-Copy" stroke="none" fill="#F7F7F7" fill-rule="evenodd"></path>
+    <g id="Rectangle-8-Copy-9" stroke="none" fill="none">
+        <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+        <use fill="#2F8AB6" fill-rule="evenodd" xlink:href="#path-3"></use>
+    </g>
+    <path d="M460.754,465.032 C460.754,463.688 459.956,462.932 458.766,462.596 C459.718,462.204 460.292,461.518 460.292,460.496 C460.292,458.928 459.2,457.85 456.89,457.85 L454.356,457.85 L454.356,468 L456.862,468 C459.284,468 460.754,467.062 460.754,465.032 L460.754,465.032 Z M458.92,460.538 C458.92,461.532 458.164,462.106 456.764,462.106 L455.728,462.106 L455.728,459.054 L456.862,459.054 C458.304,459.054 458.92,459.614 458.92,460.538 L458.92,460.538 Z M459.368,465.06 C459.368,466.222 458.486,466.81 456.974,466.81 L455.728,466.81 L455.728,463.254 L456.918,463.254 C458.5,463.254 459.368,463.898 459.368,465.06 L459.368,465.06 Z M470.862,464.094 L470.862,457.85 L469.462,457.85 L469.462,464.024 C469.462,465.858 468.552,466.908 466.746,466.908 C464.926,466.908 464.086,465.746 464.086,463.982 L464.086,457.85 L462.672,457.85 L462.672,464.164 C462.672,466.642 464.198,468.196 466.746,468.196 C469.294,468.196 470.862,466.656 470.862,464.094 L470.862,464.094 Z M480.872,459.138 L480.676,457.85 L472.654,457.85 L472.654,459.138 L476.014,459.138 L476.014,468 L477.428,468 L477.428,459.138 L480.872,459.138 Z M490.126,459.138 L489.93,457.85 L481.908,457.85 L481.908,459.138 L485.268,459.138 L485.268,468 L486.682,468 L486.682,459.138 L490.126,459.138 Z M501.214,462.918 C501.214,459.782 499.338,457.668 496.37,457.668 C493.416,457.668 491.512,459.796 491.512,462.946 C491.512,466.082 493.388,468.196 496.342,468.196 C499.31,468.196 501.214,466.04 501.214,462.918 L501.214,462.918 Z M499.772,462.932 C499.772,465.354 498.47,466.908 496.356,466.908 C494.27,466.908 492.954,465.354 492.954,462.932 C492.954,460.496 494.256,458.956 496.356,458.956 C498.456,458.956 499.772,460.496 499.772,462.932 L499.772,462.932 Z M511.644,468 L511.644,457.85 L510.356,457.85 L510.356,465.424 L504.714,457.85 L503.468,457.85 L503.468,468 L504.756,468 L504.756,460.146 L510.594,468 L511.644,468 Z" id="BUTTON-Copy-10" stroke="none" fill="#F7F7F7" fill-rule="evenodd"></path>
+    <g id="Rectangle-8-Copy-10" stroke="none" fill="none">
+        <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+        <use fill="#2F8AB6" fill-rule="evenodd" xlink:href="#path-5"></use>
+    </g>
+    <path d="M470.076,525.608 C470.076,524.072 469.164,523.208 467.804,522.824 C468.892,522.376 469.548,521.592 469.548,520.424 C469.548,518.632 468.3,517.4 465.66,517.4 L462.764,517.4 L462.764,529 L465.628,529 C468.396,529 470.076,527.928 470.076,525.608 L470.076,525.608 Z M467.98,520.472 C467.98,521.608 467.116,522.264 465.516,522.264 L464.332,522.264 L464.332,518.776 L465.628,518.776 C467.276,518.776 467.98,519.416 467.98,520.472 L467.98,520.472 Z M468.492,525.64 C468.492,526.968 467.484,527.64 465.756,527.64 L464.332,527.64 L464.332,523.576 L465.692,523.576 C467.5,523.576 468.492,524.312 468.492,525.64 L468.492,525.64 Z M481.628,524.536 L481.628,517.4 L480.028,517.4 L480.028,524.456 C480.028,526.552 478.988,527.752 476.924,527.752 C474.844,527.752 473.884,526.424 473.884,524.408 L473.884,517.4 L472.268,517.4 L472.268,524.616 C472.268,527.448 474.012,529.224 476.924,529.224 C479.836,529.224 481.628,527.464 481.628,524.536 L481.628,524.536 Z M493.068,518.872 L492.844,517.4 L483.676,517.4 L483.676,518.872 L487.516,518.872 L487.516,529 L489.132,529 L489.132,518.872 L493.068,518.872 Z M503.644,518.872 L503.42,517.4 L494.252,517.4 L494.252,518.872 L498.092,518.872 L498.092,529 L499.708,529 L499.708,518.872 L503.644,518.872 Z M516.316,523.192 C516.316,519.608 514.172,517.192 510.78,517.192 C507.404,517.192 505.228,519.624 505.228,523.224 C505.228,526.808 507.372,529.224 510.748,529.224 C514.14,529.224 516.316,526.76 516.316,523.192 L516.316,523.192 Z M514.668,523.208 C514.668,525.976 513.18,527.752 510.764,527.752 C508.38,527.752 506.876,525.976 506.876,523.208 C506.876,520.424 508.364,518.664 510.764,518.664 C513.164,518.664 514.668,520.424 514.668,523.208 L514.668,523.208 Z M528.236,529 L528.236,517.4 L526.764,517.4 L526.764,526.056 L520.316,517.4 L518.892,517.4 L518.892,529 L520.364,529 L520.364,520.024 L527.036,529 L528.236,529 Z" id="BUTTON-Copy-11" stroke="none" fill="#F7F7F7" fill-rule="evenodd"></path>
+</svg>

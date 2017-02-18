@@ -1,0 +1,13 @@
+<header class="main-header">
+  <a href="{{ "/" | prepend:site.baseurl }}">
+    <h1 class="main-header__title">Brian Cleveland</h1>
+  </a>
+  <h2 class="main-header__subtitle">UX, Product, and Design Systems</h2>
+</header>
+<nav>
+  <div class="weave-tabs weave-tabs--centered">
+    <a class="weave-tabs__label {% if page.url == "/" %}is-current{% endif %}" href="{{ "/" | prepend:site.baseurl }}">Work</a>
+    <a class="weave-tabs__label {% if page.current_page == "about" %}is-current{% endif %}" href="about">About</a>
+    <!-- <a class="weave-tabs__label {% if page.url == "/contact/" %}is-current{% endif %}" href="contact">Contact</a> -->
+  </div>
+</nav>

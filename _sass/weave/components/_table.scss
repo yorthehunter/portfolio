@@ -1,0 +1,90 @@
+$table-row-border: 1px solid color(gray-light);
+$table-row--hover-color: color(black-10);
+$table-row--stripe-color: color(gray-lightest);
+$table-row--stripe-alt-color: color(white);
+
+.#{$ns}-table {
+  border-collapse: collapse;
+
+  &--full-width {
+    width: 100%;
+  }
+
+  &--basic {
+    @extend %f-sm !optional;
+    line-height: 2rem;
+
+    // Defining this way (at the child level only) allows tables to be nested
+    // without overwriting the child table's styles
+    > thead > tr,
+    > tbody > tr,
+    > tfoot > tr,
+    > tr {
+
+      > th {
+        text-align: left;
+      }
+
+      > th,
+      > td {
+        padding: 2rem 1rem;
+      }
+    }
+  }
+
+  &--bordered {
+    > thead > tr,
+    > tbody > tr,
+    > tfoot > tr,
+    > tr {
+      border-bottom: $table-row-border;
+    }
+  }
+
+  &--striped {
+    tbody > tr,
+    > tr {
+      &:nth-child(odd) {
+        background-color: $table-row--stripe-color;
+      }
+      &:nth-child(even) {
+        background-color: $table-row--stripe-alt-color;
+      }
+    }
+  }
+
+  &--hoverable {
+    tbody > tr,
+    > tr {
+      &:hover {
+        background-color: $table-row--hover-color;
+      }
+    }
+  }
+
+  &--condensed {
+    > thead > tr,
+    > tbody > tr,
+    > tfoot > tr,
+    > tr {
+      > th,
+      > td {
+        padding-top:    1rem;
+        padding-bottom: 1rem;
+      }
+    }
+  }
+
+  &--nopad {
+    > thead > tr,
+    > tbody > tr,
+    > tfoot > tr,
+    > tr {
+      > th,
+      > td {
+        padding-top:    0;
+        padding-bottom: 0;
+      }
+    }
+  }
+}
