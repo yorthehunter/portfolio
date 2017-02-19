@@ -1,1 +1,4 @@
-# The portfolio site of Brian Cleveland (a.k.a. yorthehunter, a.k.a. boru design)
+# The portfolio site of Brian Cleveland
+## a.k.a. yorthehunter, boru design
+
+This site was built using Jekyll on GitHub pages, based on a custom CSS library
