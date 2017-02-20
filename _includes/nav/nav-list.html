@@ -1,7 +1,0 @@
-<ul class="{{ include.classes }}">
-  {% for post in include.list %}
-    <li>
-      <a class="{{ include.child_classes }}" href="{{ post.url | prepend:site.baseurl }}">{{ post.title | escape }} <div class="weave-label weave-label--accent weave-label--sm">{{ post.status }}</div></a>
-    </li>
-  {% endfor %}
-</ul>

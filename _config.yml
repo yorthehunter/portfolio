@@ -17,8 +17,8 @@
 title: "Brian Cleveland: UX, Product, and Design Systems"
 email: boru.design@gmail.com
 description: "Brian Cleveland's portfolio of designs and case studies"
-baseurl: "/portfolio" # the subpath of your site, e.g. /blog
-url: "yorthehunter.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://brian-cleveland-portfolio.herokuapp.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username:
 github_username:  yor_the_hunter
 repository: https://github.com/yorthehunter/portfolio
@@ -39,8 +39,6 @@ include:
 exclude:
   - .gitignore
   - readme.md
-  - Gemfile
-  - Gemfile.lock
 
 navigation:
 - category: "Work"
