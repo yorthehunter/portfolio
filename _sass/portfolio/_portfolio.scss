@@ -52,6 +52,23 @@ hr {
 .work-example {
   position: relative;
   overflow: hidden;
+  margin: 0 auto 1rem;
+
+  &--not-available:hover {
+    .work-example__image {
+      opacity: 0.4;
+    }
+
+    &::after {
+      content: 'No content yet; please ask for details!';
+      text-align: center;
+      @extend %type-f6--body;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
 
   &__image {
     max-width: 100%;
@@ -63,7 +80,7 @@ hr {
     left: 0;
     right: 0;
     padding: 0.5rem;
-    @extend %type-sm--constant;
+    @extend %type-sm--body;
     background-color: color(black-50);
     color: color(white);
     font-weight: 100;

@@ -1,5 +1,5 @@
 use Rack::Auth::Basic, "Restricted Area" do |username, password|
-  [username, password] == ['admin', 'admin']
+  [username, password] == ['borudesign', 'borudesign']
 end
 
 use Rack::Static, :urls => [""], :root => '.', :index => 'index.html'

@@ -1,0 +1,10 @@
+<figure class="work-example">
+  {% if include.link == nil %}
+    <a href="{{ site.baseurl }}/assets/images/{{ include.image }}" target="_blank">
+  {% else %}
+    <a href="{{ site.baseurl }}/assets/images/{{ include.link }}" target="_blank">
+  {% endif %}
+    <img src="{{ site.baseurl }}/assets/images/{{ include.image }}" class="work-example__image" alt="{{ include.caption }}">
+    <figcaption class="work-example__caption">{{ include.caption }}</figcaption>
+  </a>
+</figure>
